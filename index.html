@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etta's Bat Mitzvah — New Paltz Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple: #b08fc7;
+      --dark-purple: #5a3e7a;
+      --black: #111;
+      --gray: #555;
+      --light-gray: #f5f5f5;
+      --border: #ddd;
+    }
+
+    body {
+      background: #fff;
+      color: var(--black);
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    /* ── HEADER ── */
+    header {
+      text-align: center;
+      padding: 3rem 1.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header img.logo {
+      max-width: 380px;
+      width: 90%;
+      display: block;
+      margin: 0 auto 1.5rem;
+    }
+
+    .intro {
+      max-width: 680px;
+      margin: 0 auto 1.5rem;
+      font-size: 1.05rem;
+      color: var(--gray);
+      font-style: italic;
+    }
+
+    .map-link {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--dark-purple);
+      text-decoration: none;
+      border-bottom: 2px solid var(--purple);
+      padding-bottom: 1px;
+      transition: color 0.2s;
+    }
+    .map-link:hover { color: var(--purple); }
+
+    .contact {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-top: 0.5rem;
+    }
+    .contact a { color: var(--dark-purple); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--light-gray);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+      padding: 0.9rem 1rem;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0.3rem 0.8rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--dark-purple);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+    }
+    nav a:hover { color: var(--purple); }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--dark-purple);
+      border-bottom: 2px solid var(--purple);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── CEREMONY DETAILS ── */
+    .event-block {
+      margin-bottom: 1.5rem;
+      padding: 1.2rem 1.4rem;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--purple);
+      background: var(--light-gray);
+    }
+
+    .event-block h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      color: var(--black);
+    }
+
+    .event-block p {
+      margin: 0.2rem 0;
+      font-size: 0.97rem;
+    }
+
+    .event-block strong {
+      font-weight: 600;
+      color: var(--black);
+    }
+
+    /* ── MAPS ── */
+    .maps-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .maps-grid { grid-template-columns: 1fr; }
+    }
+
+    .maps-grid img {
+      width: 100%;
+      border: 1px solid var(--border);
+      display: block;
+    }
+
+    /* ── LISTS (coffee, dining, trails) ── */
+    .place-list {
+      list-style: none;
+    }
+
+    .place-list li {
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.97rem;
+    }
+
+    .place-list li:last-child { border-bottom: none; }
+
+    .place-list li strong {
+      font-weight: 600;
+      color: var(--black);
+    }
+
+    .note {
+      font-style: italic;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--gray);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img class="logo" src="ettabm_headerimage.png" alt="Etta's Bat Mitzvah" />
+  <p class="intro">
+    We are so happy that you are joining us for Etta's Bat Mitzvah. To help you make the most of your visit,
+    we've put together a list and maps of our favorite local spots in New Paltz and the surrounding area.
+  </p>
+  <p><a class="map-link" href="https://tinyurl.com/ettasbatmitzvahmap" target="_blank">View Etta's Bat Mitzvah Map →</a></p>
+  <p class="contact">Questions? Email us at <a href="mailto:sminkoff@gmail.com">sminkoff@gmail.com</a> or <a href="mailto:robin.minkoff@gmail.com">robin.minkoff@gmail.com</a>.</p>
+</header>
+
+<nav>
+  <a href="#ceremony">Ceremony &amp; Celebration</a>
+  <a href="#coffee">Coffee &amp; Bakeries</a>
+  <a href="#dining">Dining</a>
+  <a href="#trails">Trails &amp; Culture</a>
+</nav>
+
+<main>
+
+  <!-- CEREMONY -->
+  <section id="ceremony">
+    <h2>Ceremony &amp; Celebration Details</h2>
+
+    <div class="event-block">
+      <h3>Bat Mitzvah Ceremony</h3>
+      <p><strong>Where:</strong> Jewish Congregation of New Paltz — 8 Church St, New Paltz, NY 12561</p>
+      <p><strong>When:</strong> March 21 at 10:00am</p>
+      <p><strong>Parking:</strong> Two blocks away at the JCNP Community Center, 30 N Chestnut St, New Paltz, NY 12561. Those not wanting to walk are encouraged to get dropped off in front of the synagogue at 8 Church Street.</p>
+    </div>
+
+    <div class="event-block">
+      <h3>Bat Mitzvah Celebration</h3>
+      <p><strong>Where:</strong> Audrey's Farmhouse — 2187 Bruynswick Rd, Wallkill, NY 12589</p>
+      <p><strong>When:</strong> 4:30 to 9:30pm</p>
+    </div>
+
+    <div class="event-block">
+      <h3>Sunday Farewell Brunch <span class="note">(for those in from out of town)</span></h3>
+      <p><strong>Where:</strong> Audrey's Farmhouse — 2187 Bruynswick Rd, Wallkill, NY 12589</p>
+      <p><strong>When:</strong> 9:00am to 11:00am</p>
+    </div>
+
+    <div class="maps-grid">
+      <img src="downtownnewpaltzmap.png" alt="Downtown New Paltz map showing synagogue and parking" />
+      <img src="newpaltzareamap.png" alt="New Paltz area map showing synagogue and party venue" />
+    </div>
+  </section>
+
+  <!-- COFFEE -->
+  <section id="coffee">
+    <h2>Coffee &amp; Bakeries</h2>
+    <ul class="place-list">
+      <li><strong>Lagusta's Luscious</strong> — Amazing chocolate, coffee, and other treats.</li>
+      <li><strong>The Mudd Puddle Coffee Shop</strong> — Great spot at Water Street Market to grab a coffee and iconic New Paltz tees and hats.</li>
+      <li><strong>The Bakery in New Paltz</strong> — Grab a bite, bagel, treat, or sip.</li>
+      <li><strong>Gardiner Bakehouse</strong> — Amazing fresh bread, pastries, and coffee. Worth the drive.</li>
+      <li><strong>The Ridge Tea and Spice Shop</strong> — Extensive collection of loose-leaf teas, coffee, and unique spices.</li>
+    </ul>
+  </section>
+
+  <!-- DINING -->
+  <section id="dining">
+    <h2>Dining</h2>
+    <ul class="place-list">
+      <li><strong>One With Land</strong> — Our favorite restaurant. Located near the Bat Mitzvah venue. <span class="note">Dinner only; reservations likely needed.</span></li>
+      <li><strong>Pitanga North</strong> — A bright and inviting spot in Gardiner. <span class="note">Dinner only; reservation likely needed.</span></li>
+      <li><strong>The Grazery</strong> — Cheese shop with excellent sandwiches and specialty foods.</li>
+      <li><strong>La Charla</strong> — Great spot for Mexican food in New Paltz. <span class="note">No reservation needed.</span></li>
+      <li><strong>Apizza!</strong> — Excellent New Haven style pizza and other Italian food.</li>
+      <li><strong>Cafe Mio</strong> — A favorite Gardiner destination for fresh, farm-to-table breakfast and lunch.</li>
+      <li><strong>Lola's in New Paltz</strong> — Salads and sandwiches with a fun twist, perfect for a quick delicious lunch.</li>
+      <li><strong>Runa</strong> — A bistro serving elevated French-inspired fare. <span class="note">Dinner only; reservations likely needed.</span></li>
+      <li><strong>Benton</strong> — Comfort food and great drinks in Gardiner, right next door to the Gardiner Bakehouse.</li>
+      <li><strong>Main Street Bistro</strong> — A New Paltz institution. Good breakfast and lunch spot.</li>
+      <li><strong>Bad Seed Cidery</strong> — Enjoy dry hard ciders made from apples grown right on the farm.</li>
+      <li><strong>Underground Ales and Coffee</strong> — A nice spot for breakfast or lunch. Good coffee and good beer.</li>
+    </ul>
+  </section>
+
+  <!-- TRAILS & CULTURE -->
+  <section id="trails">
+    <h2>Trails &amp; Culture</h2>
+    <ul class="place-list">
+      <li><strong>DIA Beacon</strong> — A world-renowned contemporary art museum housed in a massive former Nabisco factory on the Hudson River.</li>
+      <li><strong>The River to Ridge Trail</strong> — A scenic path connecting New Paltz directly to the base of the Shawangunk Ridge.</li>
+      <li><strong>The Rail Trail (New Paltz)</strong> — A flat, gravel path perfect for a stroll or bike ride with views of the Gunks.</li>
+      <li><strong>The Rail Trail (Gardiner)</strong> — Access the southern stretch of the trail for a quieter walk through woods.</li>
+      <li><strong>Minnewaska State Park</strong> — Gorgeous hiking to sky-lakes, cliffs, and waterfalls.</li>
+      <li><strong>Mohonk Preserve Gatehouse</strong> — Scenic and historic entry to thousands of acres of carriage roads and world-class rock climbing.</li>
+      <li><strong>Water Street Market</strong> — A charming shopping village with boutiques, antiques, and great views.</li>
+      <li><strong>Literally Books</strong> — Robin's shop! A curated bookstore nestled within Water Street Market.</li>
+      <li><strong>Historic Huguenot Street</strong> — Explore a National Historic Landmark District featuring 17th-century stone houses. Often called the oldest authentic street in America — not because nothing predates it, but because these original stone houses have stood in their original locations, continuously inhabited, since the early 1700s.</li>
+      <li><strong>Dorsky Museum of Art</strong> — Located on the SUNY New Paltz campus, showcasing a mix of Hudson Valley and global art.</li>
+      <li><strong>Mill Brook Preserve</strong> — A small nature preserve right in town. Great for a short hike.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>Questions? <a href="mailto:sminkoff@gmail.com" style="color: var(--dark-purple);">sminkoff@gmail.com</a> &nbsp;|&nbsp; <a href="mailto:robin.minkoff@gmail.com" style="color: var(--dark-purple);">robin.minkoff@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
